@@ -1,0 +1,73 @@
+h1,h2 {
+    font-family: Arial Narrow
+}
+
+p {
+    font-family: Arial;
+}
+
+div{
+    width: 30%;
+    display: inline-block;
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    background-color: rgb(237, 237, 237);
+}
+
+label{
+    font-family: impact;
+}
+
+input[type="text"] {
+    background-color: rgb(225, 225, 225);
+    width: 50%;
+}
+
+input[type="email"] {
+    background-color: rgb(225, 225, 225);
+    width: 50%;
+}
+
+input[type="tel"] {
+    background-color: rgb(225, 225, 225);
+    width: 50%;
+}
+
+button {
+    width: 20%;
+    
+}
+
+.red{
+    background-color: red;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+}
+
+.blue{
+    background-color: blue;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table{
+    margin-left: auto;
+    margin-right: auto;
+}
