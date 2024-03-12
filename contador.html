@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de HTML com JavaScript</title>
+
+  <script>
+
+    function incrementar() {
+      var letra = document.getElementById("letra");
+      var letraAtual = letra.innerText;
+      var meta = document.getElementById("meta");
+      var metaAtual = parseInt(meta.innerText);
+      var numero = document.getElementById("numero");
+      var valorAtual = parseInt(numero.innerText);
+
+      if (valorAtual==19 && letraAtual=="A"){
+        numero.innerText = 0
+        letra.innerText = "B"
+        meta.innerText = 30
+      }
+
+      else if (valorAtual==29 && letraAtual=="B"){
+        numero.innerText = 0
+        letra.innerText = "C"
+        meta.innerText = 50
+      }
+
+      else if (valorAtual==49 && letraAtual=="C"){
+        numero.innerText = 0
+        letra.innerText = "D"
+        meta.innerText = 80
+      }
+
+      else {
+      numero.innerText = valorAtual + 1;
+      }
+    }
+
+  </script>
+
+</head>
+<body>
+  <h1>Exemplo com Botões</h1><br><br>
+
+  <table>
+    <tr>
+        <td><h2>Nivel: </h2></td>
+        <td><label id="letra">A</label></td>
+        <td><h2>Moedas: </h2></td>
+        <td><label id="numero">0</label></td>
+        <td>/ <label id="meta">20</label></td>
+    </tr>
+    <tr>
+      <td><button onclick="incrementar()">Aumentar</button></td>
+      <td><button onclick="upgrade()">Upgrade</button></td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
+<!--
+MENU UPGRADE: 
+Botão A) Click (+1|+2|+4|+5|+10) --- desbloqueia Nivel B
+Botão B) Habilitar Cliques Automáticos (1/segundo) --- Nivel C
+Botão C) Click * 1.5 --- Nivel D
+Botão D) Acelerar Cliques Automáticos (0.8/seg | 0.6/seg | 0.4/seg | 0.2/seg) --- Nivel E
+Botão E) Click * 2.5 --- Nivel F
+Botão F) Incrementar Cliques Automáticos (+1|+2|+3|+4|+5|+10) --- Nivel G
+Botão G) Click * 10 --- Nivel H
+
+Cada Botão custa Moedas
+-->
